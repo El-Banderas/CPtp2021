@@ -127,15 +127,13 @@
 
 \begin{center}\large
 \begin{tabular}{ll}
-\textbf{Grupo} nr. & 999 (preencher)
+\textbf{Grupo} nr. & 69
 \\\hline
-a11111 & Nome1 (preencher)
+a93286 & Gonçalo Soares
 \\
-a22222 & Nome2 (preencher)
+a93222 & Tomás Cardoso
 \\
-a33333 & Nome3 (preencher)
-\\
-a44444 & Nome4 (preencher, se aplicável, ou apagar)
+a93239 & Diogo Pires
 \end{tabular}
 \end{center}
 
@@ -1026,10 +1024,10 @@ outExpAr (Bin op a b) = Right ( Right (Left (op, (a,b))))
 ---
 recExpAr g = baseExpAr id id id g g id g
 ---
---g_eval_exp = undefined
-g_eval_exp a X = a
-g_eval_exp a (N num) = N num
-g_eval_exp a (Un operador expressao) = Un operador expressao 
+g_eval_exp = undefined
+--g_eval_exp a X = a
+--g_eval_exp a (N num) = N num
+--g_eval_exp a (Un operador expressao) = Un operador expressao 
 --g_eval_exp a (Bin operador x1 x2) = Bin operador x1 x2--(g_eval_exp a x1) (g_eval_exp a x2)
 ---
 clean = undefined
