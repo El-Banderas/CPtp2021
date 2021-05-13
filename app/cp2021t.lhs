@@ -1026,7 +1026,9 @@ outExpAr (Un op a) = i2 $ i2 $ i2 (op, a)
 recExpAr g = baseExpAr id id id g g id g
 ---
 g_eval_exp = undefined
---g_eval_exp a X = a
+ --g_eval_exp a (N um) = N um 
+
+--g_eval_exp a = eval_exp . (baseExpAr a)
 --g_eval_exp a (N num) = N num
 --g_eval_exp a (Un operador expressao) = Un operador expressao 
 --g_eval_exp a (Bin operador x1 x2) = Bin operador x1 x2--(g_eval_exp a x1) (g_eval_exp a x2)
