@@ -1016,10 +1016,11 @@ ad v = p2 . cataExpAr (ad_gen v)
 Definir:
 
 \begin{code}
-outExpAr X  = Left()
-outExpAr (N num) = Right(Left(num))
-outExpAr (Un a1 a2)  = Right ( Right ( (Right (a1, a2))))
-outExpAr (Bin op a b) = Right ( Right (Left (op, (a,b))))
+--outExpAr :: ExpAr a -> Either () (Either b3 (Either (b4, (ExpAr a, ExpAr a)) (b5, ExpAr a)))
+outExpAr X = i1 ()
+outExpAr (N a) = i2 $ i1 a
+outExpAr (Bin op a b) = i2 $ i2 $ i1 (op, (a, b))
+outExpAr (Un op a) = i2 $ i2 $ i2 (op, a)
 
 ---
 recExpAr g = baseExpAr id id id g g id g
