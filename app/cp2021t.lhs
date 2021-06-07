@@ -1202,6 +1202,69 @@ calcLine = cataList h where
 \end{code}
 
 \subsection*{Problema 4}
+\begin{eqnarray*}
+\start
+avgaux = <avg, length> = (| [b, q] |)
+\just\equiv{ (52)}
+|lcbr(
+  avg . in = b . F (split avg length)
+ 	)(
+  length . in = q . F (split avg length)
+ 	)|
+\just\equiv{ Functor das listas F = id + id x f }
+|lcbr(
+  avg . in = b . (id +id >< (split avg length))
+ 	)(
+  length . in = q . (id +id  >< (split avg length))
+ 	)|
+\just\equiv{in = [nil, cons], (20), b = [b1, b2]; q = [q1, q2]} 
+|lcbr(
+  either (avg . nil) (avg . cons) = (either b1 b2) . (id +id >< (split avg length))
+ 	)(
+  either (length . nil) (length . cons) = (either q1 q2) . (id +id ><  (split avg length) )
+ 	)|
+
+ \just\equiv{(22), (1)} 
+|lcbr(
+  either (avg . nil) (avg . cons) = either (b1 , b2)  (id . (split avg length)) 
+ 	)(
+  either (length . nil)  (length . cons) = either q1 (q2 . (id  . (split avg length)))
+ 	)|  
+ \just\equiv{(27)} 
+|lcbr(
+avg . nil = b1 
+ 	)(
+avg . cons =  b2 . (id >< (split avg length)) 
+ 	)| 
+   |lcbr(
+length . nil=q1
+ 	)(
+length . cons = q2 . (id  ><  split (avg length))
+ 	)| 
+\just\equiv{Introdução de variáveis (71 e 72)} 
+|lcbr(
+avg (nil l) = b1 l
+ 	)(
+avg (cons (h, l)) =  b2 ((id ><  (split avg length) (h, t))
+ 	)| 
+   |lcbr(
+length (nil l)=q1 l
+ 	)(
+length (cons (h, t)) = q2  ((id >< (split avg length)) (h, t))
+ 	)|
+\just\equiv{(76); (77); (1)} 
+|lcbr(
+  avg [] = b1 l
+ 	)(
+  avg (cons (h, l)) =  b2 ( h , split (avg t) (length t)) 
+ 	)| 
+   |lcbr(
+length []=q1 l
+ 	)(
+length (cons (h, t)) = q2 (h , split (avg t) (length t))
+ 	)|
+\qed
+\end{eqnarray*}
 
 Solução para listas não vazias:
 \begin{code}
