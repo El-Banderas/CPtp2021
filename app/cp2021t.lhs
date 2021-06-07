@@ -1015,6 +1015,8 @@ ad v = p2 . cataExpAr (ad_gen v)
 \end{code}
 Definir:
 
+
+
 \begin{code}
 outExpAr X  = Left()
 outExpAr (N num) = Right(Left(num))
@@ -1024,6 +1026,53 @@ outExpAr (Bin op a b) = Right ( Right (Left (op, (a,b))))
 ---
 recExpAr g = baseExpAr id id id g g id g
 ---
+\end{code}
+g_eval_exp:
+
+\begin{eqnarray*}
+\xymatrix@@C=2cm{
+    |num| \times |Exp A|
+           \ar[d]_-{|eval_exp|}
+           \ar[r]_-{|outExpAr|}
+&
+    |num| \times |(X + (N num) + (Bin (Expr num)  (Expr num)) + (Un (Expr num)))|
+           \ar[d]^{|cataNat g_eval_exp |}
+\\
+     |num|
+&
+     |num| ^{A} |+ (N a) + num + num|
+           \ar[l]^-{|g_eval_exp|}
+}
+\end{eqnarray*}
+
+|optmize_eval|
+\begin{eqnarray*}
+\xymatrix{
+    |num| \times |Exp A|
+           \ar[d]_-{|id >< anaNat clean|}
+           \ar[r]_-{|id >< clean|}
+&
+    |num| \times |outExpAr (ExpAr)|
+           \ar[d]^{|id >< anaNat clean |}
+\\
+    |num| \times |Exp A|
+           \ar[d]_-{|cataNat gopt|}
+           \ar[r] ^-{|id >< outExpAr|}
+&
+    |num| \times |outExpAr (ExpAr)|
+           %\ar[l]^-{|id >< inExpAr|}
+           \ar[d]_-{|cataNat gopt|}
+\\
+    |num| 
+&
+    |num| \times |outExpAr (ExpAr)|
+           \ar[l]^-{|gopt|}
+}
+\end{eqnarray*}
+
+
+
+\begin{code}
 g_eval_exp = undefined
  --g_eval_exp a (N um) = N um 
 
@@ -1040,11 +1089,50 @@ gopt = undefined
 \begin{code}
 sd_gen :: Floating a =>
     Either () (Either a (Either (BinOp, ((ExpAr a, ExpAr a), (ExpAr a, ExpAr a))) (UnOp, (ExpAr a, ExpAr a)))) -> (ExpAr a, ExpAr a)
-sd_gen = undefined
+--sd_gen = undefined
+{-sd_gen = either (X, (N 1)) (either num op) where
+    num numero = ((N numero), (N 0))
+    op = either bin un 
+    bin(Sum, ((coisa1, coisa11), (coisa2, coisa22 ) )) = ((Bin Sum coisa1 coisa2),(Bin Sum (coisa11) (coisa22)))
+    bin(Product, ((coisa1, coisa11), (coisa2, coisa22 ) )) =  ((Bin Product coisa1 coisa2), (Bin Sum (Bin Product coisa1 (coisa22)) (Bin Product (coisa11) coisa2))) 
+    un (Negate, (coisa1, coisa2) )))) = (Un Negate coisa1, Un Negate coisa2)
+    un (E, (coisa1, coisa2) )) = (Un E coisa1, Bin Product (Un E coisa1) (sd coisa1 ))
+-}
+sd_gen = either x (either nat opers) where 
+  x = split (const X) (const (N 1)) --(X, (N 1)) -- X -> X
+  nat = flip split (const (N 0)) =<< const . N
+  opers = either bin un
+  un = unDer 
+  bin = binDer
+
+unDer (E, (exp1, exp2)) = (Un E exp1, Bin Product (Un E exp1) (sd exp1))
+unDer (Negate, (exp1, exp2)) = (Un Negate exp1, Un Negate exp2)
+
+binDer (Sum, ((coisa1, coisa11), (coisa2, coisa22 ))) = (Bin Sum coisa1 coisa2, Bin Sum (coisa11) (coisa22))
+binDer (Product, ((coisa1, coisa11), (coisa2, coisa22))) = (Bin Product coisa1 coisa2, Bin Sum (Bin Product coisa1 (coisa22)) (Bin Product (coisa11) coisa2))
 \end{code}
 
 \begin{code}
-ad_gen = undefined
+ad_gen v = either x (either nat opers) where 
+  x = split (const v) (const 1)  --split v 1 --(X, (N 1)) -- X -> X
+  nat valor = (valor, 0) --flip split 0 =<< const . N
+  opers = either bin un
+  un = unDerAd 
+  bin = binDerAd
+
+unDerAd (E, (exp, val)) = (expd(exp), val*expd(exp) )
+unDerAd (Negate, (val1, val2)) = (-val1, -val2)
+
+binDerAd   (Sum, ((exp1, vEsq), (exp2, vDir))  ) = ( exp1+exp2, vEsq+vDir)
+binDerAd  (Product, ((exp1, vEsq), (exp2, vDir))  ) = ( exp1 *exp2, exp1 * vDir + vEsq * exp2 )
+{-
+ad_gen v (Left d) = (v , 1)
+ad_gen v (Right (Left (value))) =  (value, 0)
+ad_gen v (Right (Right (Left (Sum, ((exp1, vEsq), (exp2, vDir))  )))) = ( exp1+exp2, vEsq+vDir)
+ad_gen v (Right (Right (Left (Product, ((exp1, vEsq), (exp2, vDir))  )))) = ( exp1 *exp2, exp1 * vDir + vEsq * exp2 )
+ad_gen v (Right (Right (Right (E, (exp, val) )))) = (expd(exp), val*expd(exp) )
+ad_gen v (Right (Right (Right (Negate, (exp, val) )))) = (-exp, -val )
+-}
 \end{code}
 
 \subsection*{Problema 2}
@@ -1063,21 +1151,140 @@ seja a função pretendida.
 Apresentar de seguida a justificação da solução encontrada.
 
 \subsection*{Problema 3}
+Esquema do Gonçalo
+
+\begin{eqnarray*}
+\xymatrix@@C=2cm{
+    |NPoint|
+           \ar[d]_-{|cata gene|}
+           \ar[r]^-{|out|}
+&
+    |1 + Q><NPoint|
+           \ar[d]^{|id + id >< (cata gene)|}
+\\
+     (|OverTime NPoint|)^{NPoint}
+&
+     |1 + Q><|(|OverTime NPoint|)^{NPoint}
+           \ar[l]^-{|gene = [const nil, g]|}
+}
+\end{eqnarray*}
+
+
+\begin{eqnarray*}
+\xymatrix{
+    |[NPoint]|
+           \ar[d]_-{|anaNat divide|}
+           \ar[r]_-{|divide|}
+&
+    |[NPoint] + ([NPoint], [NPoint])| 
+           \ar[d]^{|id + divide|}
+\\
+    |LTree [NPoint]|
+           \ar[d]_-{|cataNat conquer|}
+           \ar[r] ^-{|outLTree|}
+&
+    |Functor da LTree de [NPoint]|
+           %\ar[l]^-{|id >< inExpAr|}
+           \ar[d]_-{|cataNat conquer|}
+\\
+    |OverTime NPoint| 
+&
+    |NPoint| \times |OverTime NPoint >< OverTime NPoint|
+          \ar[l]^-{|conquer|}
+}
+\end{eqnarray*}
+ Mas tenho dúvidas neste esquema
+
 
 \begin{code}
-calcLine :: NPoint -> (NPoint -> OverTime NPoint)
-calcLine = cataList h where
-   h = undefined
+
 
 deCasteljau :: [NPoint] -> OverTime NPoint
-deCasteljau = hyloAlgForm alg coalg where
-   coalg = undefined
-   alg = undefined
+deCasteljau =hyloNP conquer  divide --conquer . divide 
 
-hyloAlgForm = undefined
+hyloNP = hyloLTree
+conquer = either f2 f3  where 
+    f2 (x) = const x 
+    f3 l@(y1, y2) = \pt -> (calcLine (y1 pt) (y2 pt)) pt 
+
+divide [] = i1([])
+divide [x] = i1(x)
+divide x = i2(init x, tail x)
+--divide :: [NPoint] -> Either () (Either (NPoint) (NPoint, ([NPoint], [NPoint])) )
+calcLine = cataList h where
+    h = either (const (const nil)) (g)
+    g :: (Rational, NPoint -> OverTime NPoint) -> (NPoint -> OverTime NPoint)
+    g (d,f) l = case l of
+       []     -> nil
+       (x:xs) -> \z -> concat $ (sequenceA [singl . linear1d d x, f xs]) z
+
 \end{code}
 
 \subsection*{Problema 4}
+
+\begin{eqnarray*}
+\start
+avgaux = <avg, length> = (| [b, q] |)
+\just\equiv{ (52)}
+|lcbr(
+  avg . in = b . F (split avg length)
+ 	)(
+  length . in = q . F (split avg length)
+ 	)|
+\just\equiv{ Functor das listas F = id + id x f }
+|lcbr(
+  avg . in = b . (id +id >< (split avg length))
+ 	)(
+  length . in = q . (id +id  >< (split avg length))
+ 	)|
+\just\equiv{in = [nil, cons], (20), b = [b1, b2]; q = [q1, q2]} 
+|lcbr(
+  either (avg . nil) (avg . cons) = (either b1 b2) . (id +id >< (split avg length))
+ 	)(
+  either (length . nil) (length . cons) = (either q1 q2) . (id +id ><  (split avg length) )
+ 	)|
+
+ \just\equiv{(22), (1)} 
+|lcbr(
+  either (avg . nil) (avg . cons) = either (b1 , b2)  (id . (split avg length)) 
+ 	)(
+  either (length . nil)  (length . cons) = either q1 (q2 . (id  . (split avg length)))
+ 	)|  
+ \just\equiv{(27)} 
+|lcbr(
+avg . nil = b1 
+ 	)(
+avg . cons =  b2 . (id >< (split avg length)) 
+ 	)| 
+   |lcbr(
+length . nil=q1
+ 	)(
+length . cons = q2 . (id  ><  split (avg length))
+ 	)| 
+\just\equiv{Introdução de variáveis (71 e 72)} 
+|lcbr(
+avg (nil l) = b1 l
+ 	)(
+avg (cons (h, l)) =  b2 ((id ><  (split avg length) (h, t))
+ 	)| 
+   |lcbr(
+length (nil l)=q1 l
+ 	)(
+length (cons (h, t)) = q2  ((id >< (split avg length)) (h, t))
+ 	)|
+\just\equiv{(76); (77); (1)} 
+|lcbr(
+  avg [] = b1 l
+ 	)(
+  avg (cons (h, l)) =  b2 ( h , split (avg t) (length t)) 
+ 	)| 
+   |lcbr(
+length []=q1 l
+ 	)(
+length (cons (h, t)) = q2 (h , split (avg t) (length t))
+ 	)|
+\qed
+\end{eqnarray*}
 
 Solução para listas não vazias:
 \begin{code}
@@ -1097,6 +1304,107 @@ avgLTree = p1.cataLTree gene where
 Inserir em baixo o código \Fsharp\ desenvolvido, entre \verb!\begin{verbatim}! e \verb!\end{verbatim}!:
 
 \begin{verbatim}
+type BTree<'a> = Empty | Node of 'a * BTree<'a> * BTree<'a>
+//type btree = Empty | Node of btree * int * btree
+
+let inBTree x = 
+      match x with
+      | Left() -> Empty
+      | Right (nodo, (t1, t2)) -> Node (nodo, t1, t2)
+
+let outBTree x =
+     match x with
+     | Empty -> i1 ()
+     | Node (nodo, t1,t2) -> i2 (nodo, (t1,t2))
+
+// (2) Ana + cata + hylo -------------------------------------------------------
+
+let baseBTree g f = id -|- (g >< (f >< f))
+
+let recBTree f = baseBTree id f         
+// Haskell recBTree g = id -|- (id >< (g >< g))
+
+let rec cataBTree a = a << (recBTree (cataBTree a)) << outBTree 
+// << é um pipeline que encaixa o da direita no da esquerda
+//Também existe o >> :)
+
+let rec anaBTree f = inBTree << (recBTree (anaBTree f) ) << f
+
+let hyloBTree a c = cataBTree a << anaBTree c
+
+// (3) Map ---------------------------------------------------------------------
+
+//instance Functor BTree
+//         where fmap f = cataBTree ( inLTree . baseLTree f id )
+let fmap f = cataBTree ( inBTree << baseBTree f id )
+
+// (4) Examples ----------------------------------------------------------------
+
+// (4.0) Inversion (mirror) ----------------------------------------------------
+
+let invBTree x = cataBTree (inBTree << (id -|- (id >< swap))) x
+
+// (4.1) Counting --------------------------------------------------------------
+
+let countBTree x = cataBTree (either one (succ << (add) << p2)) x
+
+//-- (4.3) Serialization ---------------------------------------------------------
+
+let singl x = [x]
+
+
+let inord x =
+    let join (nodo, (esq, dir)) = esq @  singl nodo @ dir 
+    in (either nil join) x
+
+let inordt x = cataBTree inord x
+
+let preordt x =
+    let join (nodo, (esq, dir)) = nodo :: esq @ dir
+    in cataBTree (either nil join) x
+
+let postordt x =
+    let join (nodo, (esq, dir)) = esq @ dir @ singl nodo
+    in cataBTree (either nil join) x
+
+//-- (4.4) Quicksort -------------------------------------------------------------
+
+let rec part p lista = 
+    match p, lista with
+    | p, [] -> ([], [])
+    | p, (h::t)  -> let (s, l) = part p t
+                    in  if p h  then (h::s, l)
+                       else (s, h :: l)
+
+
+//-- (4.5) Traces ----------------------------------------------------------------
+
+let union l1 l2 = 
+    match l1, l2 with
+    | [], l -> l2
+    | l, [] -> l1
+    |otherwise -> let l3 = l2 |> List.filter(fun x -> not (List.contains x l1))
+                  in l1 @ l3
+
+let tunion(nodo, (esq, dir)) = union (List.map (fun t -> nodo::t) esq) (List.map (fun t -> nodo::t) dir)
+
+let traces x = cataBTree (either (konst [[]]) tunion) x
+
+//-- (4.6) Towers of Hanoi -------------------------------------------------------
+let present = inord // same as in qSort
+
+let strategy (x,y) = 
+    match (x,y) with 
+    | (x, 0) -> Left()
+    | (x, n) -> Right ((n-1,x),((not x,n-1),(not x,n-1)))
+
+//strategy(d,0) = Left ()
+//strategy(d,n+1) = Right ((n,d),((not d,n),(not d,n)))
+
+
+let hanoi x = hyloBTree present strategy x
+
+
 \end{verbatim}
 
 %----------------- Fim do anexo com soluções dos alunos ------------------------%
