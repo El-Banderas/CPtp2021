@@ -700,7 +700,7 @@ Verifique as suas funções testando a propriedade seguinte:
 A média de uma lista não vazia e de uma \LTree\ com os mesmos elementos coincide,
 a menos de um erro de 0.1 milésimas:
 \begin{code}
-prop_avg :: Ord a => [a] -> Property
+prop_avg :: [Double] -> Property
 prop_avg = nonempty .==>. diff .<=. const 0.000001 where
    diff l = avg l - (avgLTree . genLTree) l
    genLTree = anaLTree lsplit
@@ -1214,15 +1214,15 @@ avgaux = <avg, length> = (| [b, q] |)
  	)|
 \just\equiv{ Functor das listas F = id + id x f }
 |lcbr(
-  avg . in = b . (id +id >< (split avg length))
+  avg . in = b . (id + id >< (split avg length))
  	)(
-  length . in = q . (id +id  >< (split avg length))
+  length . in = q . (id + id  >< (split avg length))
  	)|
 \just\equiv{in = [nil, cons], (20), b = [b1, b2]; q = [q1, q2]} 
 |lcbr(
-  either (avg . nil) (avg . cons) = (either b1 b2) . (id +id >< (split avg length))
+  either (avg . nil) (avg . cons) = (either b1 b2) . (id + id >< (split avg length))
  	)(
-  either (length . nil) (length . cons) = (either q1 q2) . (id +id ><  (split avg length) )
+  either (length . nil) (length . cons) = (either q1 q2) . (id + id ><  (split avg length) )
  	)|
 
  \just\equiv{(22), (1)} 
@@ -1233,7 +1233,7 @@ avgaux = <avg, length> = (| [b, q] |)
  	)|  
  \just\equiv{(27)} 
 |lcbr(
-avg . nil = b1 
+avg . nil = b1
  	)(
 avg . cons =  b2 . (id >< (split avg length)) 
  	)| 
@@ -1260,7 +1260,7 @@ length (cons (h, t)) = q2  ((id >< (split avg length)) (h, t))
   avg (cons (h, l)) =  b2 ( h , split (avg t) (length t)) 
  	)| 
    |lcbr(
-length []=q1 l
+length [] = q1 l
  	)(
 length (cons (h, t)) = q2 (h , split (avg t) (length t))
  	)|
@@ -1273,12 +1273,29 @@ avg = p1.avg_aux
 \end{code}
 
 \begin{code}
-avg_aux = undefined
+inListNotNull = either singl cons 
+
+outListNotNull [a] = i1 (a)
+outListNotNull (h:t) = i2 (h, t)
+
+cataListNotNull g = g . recList (cataListNotNull g) . outListNotNull    
+
+
+avg_aux = cataListNotNull gene where
+  gene = either (split b1 q1) (split b2 q2)
+  b1 = id
+  b2(h, (avg, len)) = (h + len * avg) / (len + 1)
+  q1 = const 1
+  q2 = succ . p2 . p2
 \end{code}
 Solução para árvores de tipo \LTree:
 \begin{code}
 avgLTree = p1.cataLTree gene where
-   gene = undefined
+  gene = either b q
+  b = split id (const 1)
+  q = split q1 q2
+  q1 ((avgL, lenL), (avgR, lenR)) = (lenL * avgL + (lenR * avgR)) / (lenL + lenR)
+  q2 ((_, lenL), (_, lenR)) = lenL + lenR
 \end{code}
 
 \subsection*{Problema 5}
