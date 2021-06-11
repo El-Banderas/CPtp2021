@@ -985,6 +985,65 @@ f .&&&. g = \a -> ((f a) && (g a))
 
 %----------------- Soluções dos alunos -----------------------------------------%
 
+\begin{eqnarray*}
+\start
+	|outExpAr . inExpAr = id|
+\just\equiv{ inExpAr = pela definição }
+|outExpAr .  either (const X) (num_ops)= id|
+\just\equiv{ Fusão- + (20)}
+|either (outExpAr . (const X)) (outExpAr . num_ops) = id|
+%
+\just\equiv{ |Universal- + (17) , e (1) com k = id, f = outExpAr X, g = outExpAr num_ops| }
+%
+
+      |lcbr(
+          i1 =outExpAr (const X)
+	)(
+		id . i2 = outExpAr num ops
+	)|
+%
+\just\equiv{71, 72, e substituímos numOps por N e ops }
+%
+      |lcbr(
+        i1 var =outExpAr . (const X var)
+	)(
+        id . i2 = outExpAr . either (N) (ops)
+	)|
+%
+\just\equiv{ 74 e 20 }
+%     
+      |lcbr(
+            i1 . var =outExpAr . X 
+	)(
+        id . i2 = either (outExpAr . N) (outExpAr . ops)
+	)|
+%
+\just\equiv{Universal- + (17) , com k = id . i2, f = outExpAr . N, g = outExpAr . ops, excluímos o primeiro ramo porque já chegamos à sua conclusão }
+%       
+        |lcbr(
+        i2 . (i1 x)= outExpAr . N
+	)(
+        i2 . i2 = outExpAr . ops
+	)|
+%
+\just\equiv{|ops = either bin (uncurry Un), o primeiro ramos está concluído| }
+% 
+|i2 . i2 = outExpAr . either bin (uncurry Un)|
+%
+\just\equiv{ 74 }
+%
+|i2 . i2 = either (outExpAr bin) (outExpAr uncurry Un)|
+%
+\just\equiv{Universal- + (17) , e (1) com k = i2 . i2, f = outExpAr . bin, g = outExpAr . uncurry Un }
+%
+        |lcbr(
+        i2 . i2 . i1 = outExpAr  . bin
+    )(
+        i2 . i2 . i2 =outExpAr . (uncurry Un)
+    )|
+\qed
+\end{eqnarray*}
+
 \section{Soluções dos alunos}\label{sec:resolucao}
 Os alunos devem colocar neste anexo as suas soluções para os exercícios
 propostos, de acordo com o "layout" que se fornece. Não podem ser
@@ -1224,7 +1283,7 @@ calcLine = cataList h where
 
 \begin{eqnarray*}
 \start
-avgaux = <avg, length> = (| [b, q] |)
+| avg_aux = (split avg length) = cata (either b q) |
 \just\equiv{ (52)}
 |lcbr(
   avg . in = b . F (split avg length)
@@ -1279,10 +1338,25 @@ length (cons (h, t)) = q2  ((id >< (split avg length)) (h, t))
   avg (cons (h, l)) =  b2 ( h , split (avg t) (length t)) 
  	)| 
    |lcbr(
-length []=q1 l
- 	)(
-length (cons (h, t)) = q2 (h , split (avg t) (length t))
+    length []=q1 l
+    )(
+    length (cons (h, t)) = q2 (h , split (avg t) (length t))
  	)|
+\just\equiv{|Daqui inferimos|} 
+|lcbr(
+b1 =one
+ 	)(
+b2 (h, (avg, len)) = frac (h+len >< avg) (len + 1)
+ 	)| 
+   |lcbr(
+q1 =one
+    )(
+q2(h, (avg, len)) =len +1= succ . p2 . p2
+ 	)|
+\just\equiv{|Logo temos|}
+|(split avg len ) = cata (split  (either b1 b2) (either q1 q2))|
+\just\equiv{|Lei da troca |}
+|  either (split b1 q1) (split (b2 q2))|  
 \qed
 \end{eqnarray*}
 
