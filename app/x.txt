@@ -1,0 +1,2009 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=latex)
+ restricted \write18 enabled.
+**entering extended mode
+! I can't find file `34'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `35'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `36'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `37'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `38'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `39'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `40'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `41'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `42'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `43'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `44'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `45'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `46'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `47'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `48'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `49'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `50'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `51'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `52'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `53'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `54'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `55'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `56'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `57'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `58'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `59'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `60'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `61'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `62'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `63'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `64'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `65'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `66'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `67'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `68'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `69'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `70'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `71'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `72'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `73'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `74'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `75'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `76'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `77'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `78'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `79'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `80'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `81'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `82'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `83'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `84'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `85'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `86'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `87'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `88'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `89'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `90'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `91'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `92'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `93'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `94'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `95'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `96'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `97'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `98'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `99'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `100'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `101'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `102'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `103'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `104'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `105'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `106'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `107'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `108'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `109'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `110'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `111'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `112'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `113'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `114'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `115'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `116'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `117'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `118'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `119'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `120'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `121'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `122'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `123'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `124'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `125'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `126'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `127'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `128'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `129'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `130'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `131'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `132'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `133'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `134'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `135'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `136'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `137'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `138'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `139'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `140'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `141'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `142'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `143'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `144'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `145'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `146'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `147'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `148'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `149'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `150'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `151'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `152'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `153'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `154'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `155'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `156'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `157'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `158'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `159'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `160'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `161'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `162'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `163'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `164'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `165'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `166'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `167'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `168'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `169'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `170'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `171'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `172'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `173'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `174'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `175'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `176'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `177'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `178'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `179'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `180'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `181'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `182'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `183'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `184'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `185'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `186'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `187'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `188'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `189'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `190'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `191'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `192'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `193'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `194'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `195'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `196'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `197'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `198'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `199'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `200'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `201'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `202'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `203'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `204'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `205'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `206'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `207'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `208'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `209'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `210'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `211'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `212'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `213'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `214'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `215'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `216'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `217'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `218'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `219'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `220'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `221'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `222'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `223'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `224'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `225'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `226'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `227'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `228'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `229'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `230'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `231'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `232'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `233'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `234'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `235'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `236'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `237'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `238'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `239'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `240'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `241'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `242'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `243'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `244'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `245'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `246'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `247'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `248'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `249'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `250'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `251'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `252'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `253'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `254'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `255'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `256'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `257'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `258'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `259'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `260'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `261'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `262'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `263'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `264'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `265'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `266'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `267'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `268'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `269'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `270'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `271'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `272'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `273'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `274'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `275'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `276'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `277'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `278'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `279'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `280'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `281'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `282'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `283'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `284'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `285'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `286'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `287'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `288'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `289'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `290'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `291'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `292'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `293'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `294'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `295'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `296'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `297'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `298'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `299'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `300'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `301'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `302'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `303'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `304'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `305'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `306'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `307'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `308'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `309'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `310'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `311'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `312'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `313'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `314'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `315'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `316'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `317'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `318'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `319'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `320'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `321'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `322'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `323'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `324'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `325'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `326'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `327'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `328'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `329'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `330'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `331'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `332'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `333'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `334'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `335'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `336'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `337'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `338'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `339'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `340'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `341'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `342'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `343'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `344'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `345'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `346'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `347'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `348'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `349'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `350'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `351'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `352'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `353'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `354'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `355'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `356'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `357'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `358'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `359'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `360'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `361'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `362'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `363'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `364'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `365'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `366'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `367'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `368'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `369'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `370'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `371'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `372'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `373'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `374'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `375'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `376'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `377'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `378'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `379'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `380'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `381'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `382'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `383'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `384'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `385'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `386'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `387'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `388'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `389'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `390'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `391'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `392'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `393'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `394'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `395'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `396'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `397'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `398'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `399'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `400'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `401'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `402'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `403'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `404'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `405'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `406'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `407'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `408'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `409'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `410'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `411'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `412'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `413'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `414'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `415'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `416'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `417'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `418'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `419'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `420'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `421'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `422'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `423'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `424'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `425'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `426'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `427'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `428'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `429'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `430'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `431'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `432'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `433'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `434'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `435'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `436'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `437'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `438'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `439'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `440'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `441'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `442'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `443'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `444'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `445'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `446'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `447'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `448'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `449'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `450'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `451'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `452'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `453'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `454'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `455'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `456'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `457'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `458'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `459'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `460'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `461'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `462'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `463'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `464'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `465'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `466'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `467'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `468'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `469'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `470'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `471'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `472'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `473'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `474'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `475'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `476'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `477'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `478'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `479'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `480'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `481'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `482'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `483'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `484'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `485'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `486'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `487'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `488'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `489'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `490'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `491'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `492'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `493'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `494'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `495'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `496'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `497'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `498'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `499'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `500'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `501'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `502'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `503'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `504'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `505'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `506'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `507'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `508'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `509'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `510'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `511'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `512'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `513'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `514'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `515'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `516'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `517'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `518'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `519'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `520'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `521'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `522'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `523'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `524'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `525'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `526'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `527'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `528'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `529'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `530'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `531'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `532'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: ! I can't find file `533'.
+<*>    34 
+           ls /home/banderitas/Downloads/
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: 
+! Emergency stop.
+<*>    34 
+           ls /home/banderitas/Downloads/
+No pages of output.
+Transcript written on texput.log.
