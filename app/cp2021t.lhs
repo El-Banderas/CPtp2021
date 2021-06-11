@@ -985,6 +985,17 @@ f .&&&. g = \a -> ((f a) && (g a))
 
 %----------------- Soluções dos alunos -----------------------------------------%
 
+\section{Soluções dos alunos}\label{sec:resolucao}
+Os alunos devem colocar neste anexo as suas soluções para os exercícios
+propostos, de acordo com o "layout" que se fornece. Não podem ser
+alterados os nomes ou tipos das funções dadas, mas pode ser adicionado
+texto, disgramas e/ou outras funções auxiliares que sejam necessárias.
+
+Valoriza-se a escrita de \emph{pouco} código que corresponda a soluções
+simples e elegantes.
+
+\subsection*{Problema 1} \label{pg:P1}
+
 \begin{eqnarray*}
 \start
 	|outExpAr . inExpAr = id|
@@ -1044,16 +1055,7 @@ f .&&&. g = \a -> ((f a) && (g a))
 \qed
 \end{eqnarray*}
 
-\section{Soluções dos alunos}\label{sec:resolucao}
-Os alunos devem colocar neste anexo as suas soluções para os exercícios
-propostos, de acordo com o "layout" que se fornece. Não podem ser
-alterados os nomes ou tipos das funções dadas, mas pode ser adicionado
-texto, disgramas e/ou outras funções auxiliares que sejam necessárias.
 
-Valoriza-se a escrita de \emph{pouco} código que corresponda a soluções
-simples e elegantes.
-
-\subsection*{Problema 1} \label{pg:P1}
 São dadas:
 \begin{code}
 cataExpAr g = g . recExpAr (cataExpAr g) . outExpAr

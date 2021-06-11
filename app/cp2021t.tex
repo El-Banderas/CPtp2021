@@ -1040,7 +1040,7 @@ a menos de um erro de 0.1 milésimas:
 \column{B}{@{}>{\hspre}l<{\hspost}@{}}%
 \column{4}{@{}>{\hspre}l<{\hspost}@{}}%
 \column{E}{@{}>{\hspre}l<{\hspost}@{}}%
-\>[B]{}\Varid{prop\char95 avg}\mathbin{::}\Conid{Ord}\;\Varid{a}\Rightarrow [\mskip1.5mu \Varid{a}\mskip1.5mu]\to \Conid{Property}{}\<[E]%
+\>[B]{}\Varid{prop\char95 avg}\mathbin{::}[\mskip1.5mu \Conid{Double}\mskip1.5mu]\to \Conid{Property}{}\<[E]%
 \\
 \>[B]{}\Varid{prop\char95 avg}\mathrel{=}\Varid{nonempty}\Rightarrow\Varid{diff}\leq\underline{\mathrm{0.000001}}\;\mathbf{where}{}\<[E]%
 \\
@@ -1524,6 +1524,47 @@ Valoriza-se a escrita de \emph{pouco} código que corresponda a soluções
 simples e elegantes.
 
 \subsection*{Problema 1} \label{pg:P1}
+
+\begin{eqnarray*}
+\start
+	\ensuremath{\Varid{outExpAr}\comp \Varid{inExpAr}\mathrel{=}\Varid{id}}
+\just\equiv{ inExpAr = pela definição }
+\ensuremath{\Varid{outExpAr}\comp \alt{\underline{\Conid{X}}}{\Varid{num\char95 ops}}\mathrel{=}\Varid{id}}
+\just\equiv{ Fusão- + (20)}
+\ensuremath{\alt{\Varid{outExpAr}\comp \underline{\Conid{X}}}{\Varid{outExpAr}\comp \Varid{num\char95 ops}}\mathrel{=}\Varid{id}}
+%
+\just\equiv{ \ensuremath{\Conid{Universal}\mathbin{-}\mathbin{+}(\mathrm{17}),\Varid{e}\;(\mathrm{1})\;\Varid{com}\;\Varid{k}\mathrel{=}\Varid{id},\Varid{f}\mathrel{=}\Varid{outExpAr}\;\Conid{X},\Varid{g}\mathrel{=}\Varid{outExpAr}\;\Varid{num\char95 ops}} }
+%
+
+      \ensuremath{\begin{lcbr}i_1\mathrel{=}\Varid{outExpAr}\;\underline{\Conid{X}}\\\Varid{id}\comp i_2\mathrel{=}\Varid{outExpAr}\;\Varid{num}\;\Varid{ops}\end{lcbr}}
+%
+\just\equiv{71, 72, e substituímos numOps por N e ops }
+%
+      \ensuremath{\begin{lcbr}i_1\;\Varid{var}\mathrel{=}\Varid{outExpAr}\comp \underline{\Conid{X}}\;\Varid{var}\\\Varid{id}\comp i_2\mathrel{=}\Varid{outExpAr}\comp \alt{\Conid{N}}{\Varid{ops}}\end{lcbr}}
+%
+\just\equiv{ 74 e 20 }
+%     
+      \ensuremath{\begin{lcbr}i_1\comp \Varid{var}\mathrel{=}\Varid{outExpAr}\comp \Conid{X}\\\Varid{id}\comp i_2\mathrel{=}\alt{\Varid{outExpAr}\comp \Conid{N}}{\Varid{outExpAr}\comp \Varid{ops}}\end{lcbr}}
+%
+\just\equiv{Universal- + (17) , com k = id . i2, f = outExpAr . N, g = outExpAr . ops, excluímos o primeiro ramo porque já chegamos à sua conclusão }
+%       
+        \ensuremath{\begin{lcbr}i_2\comp (i_1\;\Varid{x})\mathrel{=}\Varid{outExpAr}\comp \Conid{N}\\i_2\comp i_2\mathrel{=}\Varid{outExpAr}\comp \Varid{ops}\end{lcbr}}
+%
+\just\equiv{\ensuremath{\Varid{ops}\mathrel{=}\alt{\Varid{bin}}{\uncurry{\Conid{Un}}},\Varid{o}\;\Varid{primeiro}\;\Varid{ramos}\;\Varid{está}\;\Varid{concluído}} }
+% 
+\ensuremath{i_2\comp i_2\mathrel{=}\Varid{outExpAr}\comp \alt{\Varid{bin}}{\uncurry{\Conid{Un}}}}
+%
+\just\equiv{ 74 }
+%
+\ensuremath{i_2\comp i_2\mathrel{=}\alt{\Varid{outExpAr}\;\Varid{bin}}{\Varid{outExpAr}\;\uncurry{\cdot }\;\Conid{Un}}}
+%
+\just\equiv{Universal- + (17) , e (1) com k = i2 . i2, f = outExpAr . bin, g = outExpAr . uncurry Un }
+%
+        \ensuremath{\begin{lcbr}i_2\comp i_2\comp i_1\mathrel{=}\Varid{outExpAr}\comp \Varid{bin}\\i_2\comp i_2\comp i_2\mathrel{=}\Varid{outExpAr}\comp \uncurry{\Conid{Un}}\end{lcbr}}
+\qed
+\end{eqnarray*}
+
+
 São dadas:
 \begin{hscode}\SaveRestoreHook
 \column{B}{@{}>{\hspre}l<{\hspost}@{}}%
@@ -1553,30 +1594,81 @@ São dadas:
 \end{hscode}\resethooks
 Definir:
 
+
+
 \begin{hscode}\SaveRestoreHook
 \column{B}{@{}>{\hspre}l<{\hspost}@{}}%
-\column{13}{@{}>{\hspre}l<{\hspost}@{}}%
-\column{22}{@{}>{\hspre}l<{\hspost}@{}}%
 \column{E}{@{}>{\hspre}l<{\hspost}@{}}%
-\>[B]{}\Varid{outExpAr}\;\Conid{X}{}\<[13]%
-\>[13]{}\mathrel{=}i_1\;(){}\<[E]%
+\>[B]{}\mbox{\onelinecomment outExpAr :: ExpAr a -> Either () (Either b3 (Either (b4, (ExpAr a, ExpAr a)) (b5, ExpAr a)))}{}\<[E]%
 \\
-\>[B]{}\Varid{outExpAr}\;(\Conid{N}\;\Varid{num})\mathrel{=}i_2\;(i_1\;(\Varid{num})){}\<[E]%
+\>[B]{}\Varid{outExpAr}\;\Conid{X}\mathrel{=}i_1\;(){}\<[E]%
 \\
-\>[B]{}\Varid{outExpAr}\;(\Conid{Un}\;\Varid{a1}\;\Varid{a2}){}\<[22]%
-\>[22]{}\mathrel{=}i_2\;(i_2\;((i_2\;(\Varid{a1},\Varid{a2})))){}\<[E]%
+\>[B]{}\Varid{outExpAr}\;(\Conid{N}\;\Varid{a})\mathrel{=}i_2\mathbin{\$}i_1\;\Varid{a}{}\<[E]%
 \\
-\>[B]{}\Varid{outExpAr}\;(\Conid{Bin}\;\Varid{op}\;\Varid{a}\;\Varid{b})\mathrel{=}i_2\;(i_2\;(i_1\;(\Varid{op},(\Varid{a},\Varid{b})))){}\<[E]%
+\>[B]{}\Varid{outExpAr}\;(\Conid{Bin}\;\Varid{op}\;\Varid{a}\;\Varid{b})\mathrel{=}i_2\mathbin{\$}i_2\mathbin{\$}i_1\;(\Varid{op},(\Varid{a},\Varid{b})){}\<[E]%
+\\
+\>[B]{}\Varid{outExpAr}\;(\Conid{Un}\;\Varid{op}\;\Varid{a})\mathrel{=}i_2\mathbin{\$}i_2\mathbin{\$}i_2\;(\Varid{op},\Varid{a}){}\<[E]%
 \\[\blanklineskip]%
 \>[B]{}\mbox{\onelinecomment }{}\<[E]%
 \\
 \>[B]{}\Varid{recExpAr}\;\Varid{g}\mathrel{=}\Varid{baseExpAr}\;\Varid{id}\;\Varid{id}\;\Varid{id}\;\Varid{g}\;\Varid{g}\;\Varid{id}\;\Varid{g}{}\<[E]%
 \\
 \>[B]{}\mbox{\onelinecomment }{}\<[E]%
+\ColumnHook
+\end{hscode}\resethooks
+g_eval_exp:
+
+\begin{eqnarray*}
+\xymatrix@C=2cm{
+    \ensuremath{\Varid{num}} \times \ensuremath{\Conid{Exp}\;\Conid{A}}
+           \ar[d]_-{\ensuremath{\Varid{eval\char95 exp}}}
+           \ar[r]_-{\ensuremath{\Varid{outExpAr}}}
+&
+    \ensuremath{\Varid{num}} \times \ensuremath{(\Conid{X}\mathbin{+}(\Conid{N}\;\Varid{num})\mathbin{+}(\Conid{Bin}\;(\Conid{Expr}\;\Varid{num})\;(\Conid{Expr}\;\Varid{num}))\mathbin{+}(\Conid{Un}\;(\Conid{Expr}\;\Varid{num})))}
+           \ar[d]^{\ensuremath{\cata{\Varid{g\char95 eval\char95 exp}}}}
 \\
+     \ensuremath{\Varid{num}}
+&
+     \ensuremath{\Varid{num}} ^{A} \ensuremath{\mathbin{+}(\Conid{N}\;\Varid{a})\mathbin{+}\Varid{num}\mathbin{+}\Varid{num}}
+           \ar[l]^-{\ensuremath{\Varid{g\char95 eval\char95 exp}}}
+}
+\end{eqnarray*}
+
+\ensuremath{\Varid{optmize\char95 eval}}
+\begin{eqnarray*}
+\xymatrix{
+    \ensuremath{\Varid{num}} \times \ensuremath{\Conid{Exp}\;\Conid{A}}
+           \ar[d]_-{\ensuremath{\Varid{id}\times\Varid{anaNat}\;\Varid{clean}}}
+           \ar[r]_-{\ensuremath{\Varid{id}\times\Varid{clean}}}
+&
+    \ensuremath{\Varid{num}} \times \ensuremath{\Varid{outExpAr}\;(\Conid{ExpAr})}
+           \ar[d]^{\ensuremath{\Varid{id}\times\Varid{anaNat}\;\Varid{clean}}}
+\\
+    \ensuremath{\Varid{num}} \times \ensuremath{\Conid{Exp}\;\Conid{A}}
+           \ar[d]_-{\ensuremath{\cata{\Varid{gopt}}}}
+           \ar[r] ^-{\ensuremath{\Varid{id}\times\Varid{outExpAr}}}
+&
+    \ensuremath{\Varid{num}} \times \ensuremath{\Varid{outExpAr}\;(\Conid{ExpAr})}
+           %\ar[l]^-{|id >< inExpAr|}
+           \ar[d]_-{\ensuremath{\cata{\Varid{gopt}}}}
+\\
+    \ensuremath{\Varid{num}} 
+&
+    \ensuremath{\Varid{num}} \times \ensuremath{\Varid{outExpAr}\;(\Conid{ExpAr})}
+           \ar[l]^-{\ensuremath{\Varid{gopt}}}
+}
+\end{eqnarray*}
+
+
+
+\begin{hscode}\SaveRestoreHook
+\column{B}{@{}>{\hspre}l<{\hspost}@{}}%
+\column{E}{@{}>{\hspre}l<{\hspost}@{}}%
 \>[B]{}\Varid{g\char95 eval\char95 exp}\mathrel{=}\bot {}\<[E]%
 \\
-\>[B]{}\mbox{\onelinecomment g_eval_exp a X = a}{}\<[E]%
+\>[B]{}\mbox{\onelinecomment g_eval_exp a (N um) = N um }{}\<[E]%
+\\[\blanklineskip]%
+\>[B]{}\mbox{\onelinecomment g_eval_exp a = eval_exp . (baseExpAr a)}{}\<[E]%
 \\
 \>[B]{}\mbox{\onelinecomment g_eval_exp a (N num) = N num}{}\<[E]%
 \\
@@ -1596,6 +1688,7 @@ Definir:
 
 \begin{hscode}\SaveRestoreHook
 \column{B}{@{}>{\hspre}l<{\hspost}@{}}%
+\column{3}{@{}>{\hspre}l<{\hspost}@{}}%
 \column{5}{@{}>{\hspre}l<{\hspost}@{}}%
 \column{E}{@{}>{\hspre}l<{\hspost}@{}}%
 \>[B]{}\Varid{sd\char95 gen}\mathbin{::}\Conid{Floating}\;\Varid{a}\Rightarrow {}\<[E]%
@@ -1603,14 +1696,89 @@ Definir:
 \>[B]{}\hsindent{5}{}\<[5]%
 \>[5]{}()+(\Varid{a}+((\Conid{BinOp},((\Conid{ExpAr}\;\Varid{a},\Conid{ExpAr}\;\Varid{a}),(\Conid{ExpAr}\;\Varid{a},\Conid{ExpAr}\;\Varid{a})))+(\Conid{UnOp},(\Conid{ExpAr}\;\Varid{a},\Conid{ExpAr}\;\Varid{a}))))\to (\Conid{ExpAr}\;\Varid{a},\Conid{ExpAr}\;\Varid{a}){}\<[E]%
 \\
-\>[B]{}\Varid{sd\char95 gen}\mathrel{=}\bot {}\<[E]%
+\>[B]{}\mbox{\onelinecomment sd_gen = undefined}{}\<[E]%
+\\
+\>[B]{}\mbox{\commentbegin sd_gen = either (X, (N 1)) (either num op) where
+    num numero = ((N numero), (N 0))
+    op = either bin un 
+    bin(Sum, ((coisa1, coisa11), (coisa2, coisa22 ) )) = ((Bin Sum coisa1 coisa2),(Bin Sum (coisa11) (coisa22)))
+    bin(Product, ((coisa1, coisa11), (coisa2, coisa22 ) )) =  ((Bin Product coisa1 coisa2), (Bin Sum (Bin Product coisa1 (coisa22)) (Bin Product (coisa11) coisa2))) 
+    un (Negate, (coisa1, coisa2) )))) = (Un Negate coisa1, Un Negate coisa2)
+    un (E, (coisa1, coisa2) )) = (Un E coisa1, Bin Product (Un E coisa1) (sd coisa1 )) \commentend}{}\<[E]%
+\\[\blanklineskip]%
+\>[B]{}\Varid{sd\char95 gen}\mathrel{=}\alt{\Varid{x}}{\alt{\Varid{nat}}{\Varid{opers}}}\;\mathbf{where}{}\<[E]%
+\\
+\>[B]{}\hsindent{3}{}\<[3]%
+\>[3]{}\Varid{x}\mathrel{=}\conj{\underline{\Conid{X}}}{\underline{(\Conid{N}\;\mathrm{1})}}\mbox{\onelinecomment (X, (N 1)) -- X -> X}{}\<[E]%
+\\
+\>[B]{}\hsindent{3}{}\<[3]%
+\>[3]{}\Varid{nat}\mathrel{=}\Varid{flip}\;\conj{\cdot }{\cdot }\;\underline{(\Conid{N}\;\mathrm{0})}\rbind \underline{\cdot }\comp \Conid{N}{}\<[E]%
+\\
+\>[B]{}\hsindent{3}{}\<[3]%
+\>[3]{}\Varid{opers}\mathrel{=}\alt{\Varid{bin}}{\Varid{un}}{}\<[E]%
+\\
+\>[B]{}\hsindent{3}{}\<[3]%
+\>[3]{}\Varid{un}\mathrel{=}\Varid{unDer}{}\<[E]%
+\\
+\>[B]{}\hsindent{3}{}\<[3]%
+\>[3]{}\Varid{bin}\mathrel{=}\Varid{binDer}{}\<[E]%
+\\[\blanklineskip]%
+\>[B]{}\Varid{unDer}\;(\Conid{E},(\Varid{exp1},\Varid{exp2}))\mathrel{=}(\Conid{Un}\;\Conid{E}\;\Varid{exp1},\Conid{Bin}\;\Conid{Product}\;(\Conid{Un}\;\Conid{E}\;\Varid{exp1})\;(\Varid{sd}\;\Varid{exp1})){}\<[E]%
+\\
+\>[B]{}\Varid{unDer}\;(\Conid{Negate},(\Varid{exp1},\Varid{exp2}))\mathrel{=}(\Conid{Un}\;\Conid{Negate}\;\Varid{exp1},\Conid{Un}\;\Conid{Negate}\;\Varid{exp2}){}\<[E]%
+\\[\blanklineskip]%
+\>[B]{}\Varid{binDer}\;(\Conid{Sum},((\Varid{coisa1},\Varid{coisa11}),(\Varid{coisa2},\Varid{coisa22})))\mathrel{=}(\Conid{Bin}\;\Conid{Sum}\;\Varid{coisa1}\;\Varid{coisa2},\Conid{Bin}\;\Conid{Sum}\;(\Varid{coisa11})\;(\Varid{coisa22})){}\<[E]%
+\\
+\>[B]{}\Varid{binDer}\;(\Conid{Product},((\Varid{coisa1},\Varid{coisa11}),(\Varid{coisa2},\Varid{coisa22})))\mathrel{=}(\Conid{Bin}\;\Conid{Product}\;\Varid{coisa1}\;\Varid{coisa2},\Conid{Bin}\;\Conid{Sum}\;(\Conid{Bin}\;\Conid{Product}\;\Varid{coisa1}\;(\Varid{coisa22}))\;(\Conid{Bin}\;\Conid{Product}\;(\Varid{coisa11})\;\Varid{coisa2})){}\<[E]%
 \ColumnHook
 \end{hscode}\resethooks
 
 \begin{hscode}\SaveRestoreHook
 \column{B}{@{}>{\hspre}l<{\hspost}@{}}%
+\column{3}{@{}>{\hspre}l<{\hspost}@{}}%
+\column{11}{@{}>{\hspre}l<{\hspost}@{}}%
+\column{12}{@{}>{\hspre}l<{\hspost}@{}}%
+\column{34}{@{}>{\hspre}l<{\hspost}@{}}%
+\column{48}{@{}>{\hspre}l<{\hspost}@{}}%
+\column{51}{@{}>{\hspre}l<{\hspost}@{}}%
 \column{E}{@{}>{\hspre}l<{\hspost}@{}}%
-\>[B]{}\Varid{ad\char95 gen}\mathrel{=}\bot {}\<[E]%
+\>[B]{}\Varid{ad\char95 gen}\;\Varid{v}\mathrel{=}\alt{\Varid{x}}{\alt{\Varid{nat}}{\Varid{opers}}}\;\mathbf{where}{}\<[E]%
+\\
+\>[B]{}\hsindent{3}{}\<[3]%
+\>[3]{}\Varid{x}\mathrel{=}\conj{\underline{\Varid{v}}}{\underline{\mathrm{1}}}{}\<[34]%
+\>[34]{}\mbox{\onelinecomment split v 1 --(X, (N 1)) -- X -> X}{}\<[E]%
+\\
+\>[B]{}\hsindent{3}{}\<[3]%
+\>[3]{}\Varid{nat}\;\Varid{valor}\mathrel{=}(\Varid{valor},\mathrm{0})\mbox{\onelinecomment flip split 0 =<< const . N}{}\<[E]%
+\\
+\>[B]{}\hsindent{3}{}\<[3]%
+\>[3]{}\Varid{opers}\mathrel{=}\alt{\Varid{bin}}{\Varid{un}}{}\<[E]%
+\\
+\>[B]{}\hsindent{3}{}\<[3]%
+\>[3]{}\Varid{un}\mathrel{=}\Varid{unDerAd}{}\<[E]%
+\\
+\>[B]{}\hsindent{3}{}\<[3]%
+\>[3]{}\Varid{bin}\mathrel{=}\Varid{binDerAd}{}\<[E]%
+\\[\blanklineskip]%
+\>[B]{}\Varid{unDerAd}\;(\Conid{E},(\Varid{exp},\Varid{val}))\mathrel{=}(\Varid{expd}\;(\Varid{exp}),\Varid{val}\mathbin{*}\Varid{expd}\;(\Varid{exp})){}\<[E]%
+\\
+\>[B]{}\Varid{unDerAd}\;(\Conid{Negate},(\Varid{val1},\Varid{val2}))\mathrel{=}(\mathbin{-}\Varid{val1},\mathbin{-}\Varid{val2}){}\<[E]%
+\\[\blanklineskip]%
+\>[B]{}\Varid{binDerAd}\;{}\<[12]%
+\>[12]{}(\Conid{Sum},((\Varid{exp1},\Varid{vEsq}),(\Varid{exp2},\Varid{vDir})){}\<[48]%
+\>[48]{})\mathrel{=}(\Varid{exp1}\mathbin{+}\Varid{exp2},\Varid{vEsq}\mathbin{+}\Varid{vDir}){}\<[E]%
+\\
+\>[B]{}\Varid{binDerAd}\;{}\<[11]%
+\>[11]{}(\Conid{Product},((\Varid{exp1},\Varid{vEsq}),(\Varid{exp2},\Varid{vDir})){}\<[51]%
+\>[51]{})\mathrel{=}(\Varid{exp1}\mathbin{*}\Varid{exp2},\Varid{exp1}\mathbin{*}\Varid{vDir}\mathbin{+}\Varid{vEsq}\mathbin{*}\Varid{exp2}){}\<[E]%
+\\
+\>[B]{}\mbox{\commentbegin 
+ad_gen v (Left d) = (v , 1)
+ad_gen v (Right (Left (value))) =  (value, 0)
+ad_gen v (Right (Right (Left (Sum, ((exp1, vEsq), (exp2, vDir))  )))) = ( exp1+exp2, vEsq+vDir)
+ad_gen v (Right (Right (Left (Product, ((exp1, vEsq), (exp2, vDir))  )))) = ( exp1 *exp2, exp1 * vDir + vEsq * exp2 )
+ad_gen v (Right (Right (Right (E, (exp, val) )))) = (expd(exp), val*expd(exp) )
+ad_gen v (Right (Right (Right (Negate, (exp, val) )))) = (-exp, -val ) \commentend}{}\<[E]%
 \ColumnHook
 \end{hscode}\resethooks
 
@@ -1638,33 +1806,135 @@ seja a função pretendida.
 Apresentar de seguida a justificação da solução encontrada.
 
 \subsection*{Problema 3}
+Esquema do Gonçalo
+
+\begin{eqnarray*}
+\xymatrix@C=2cm{
+    \ensuremath{\Conid{NPoint}}
+           \ar[d]_-{\ensuremath{\cata{\Varid{gene}}}}
+           \ar[r]^-{\ensuremath{\Varid{out}}}
+&
+    \ensuremath{\mathrm{1}\mathbin{+}\Conid{Q}\times\Conid{NPoint}}
+           \ar[d]^{\ensuremath{\Varid{id}\mathbin{+}\Varid{id}\times\cata{\Varid{gene}}}}
+\\
+     (\ensuremath{\Conid{OverTime}\;\Conid{NPoint}})^{NPoint}
+&
+     \ensuremath{\mathrm{1}\mathbin{+}\Conid{Q}\times}(\ensuremath{\Conid{OverTime}\;\Conid{NPoint}})^{NPoint}
+           \ar[l]^-{\ensuremath{\Varid{gene}\mathrel{=}[\mskip1.5mu \underline{\Varid{nil}},\Varid{g}\mskip1.5mu]}}
+}
+\end{eqnarray*}
+
+
+\begin{eqnarray*}
+\xymatrix{
+    \ensuremath{[\mskip1.5mu \Conid{NPoint}\mskip1.5mu]}
+           \ar[d]_-{\ensuremath{\Varid{anaNat}\;\Varid{divide}}}
+           \ar[r]_-{\ensuremath{\Varid{divide}}}
+&
+    \ensuremath{[\mskip1.5mu \Conid{NPoint}\mskip1.5mu]\mathbin{+}([\mskip1.5mu \Conid{NPoint}\mskip1.5mu],[\mskip1.5mu \Conid{NPoint}\mskip1.5mu])} 
+           \ar[d]^{\ensuremath{\Varid{id}\mathbin{+}\Varid{divide}}}
+\\
+    \ensuremath{\mathsf{LTree}\;[\mskip1.5mu \Conid{NPoint}\mskip1.5mu]}
+           \ar[d]_-{\ensuremath{\cata{\Varid{conquer}}}}
+           \ar[r] ^-{\ensuremath{\Varid{outLTree}}}
+&
+    \ensuremath{\Conid{Functor}\;\Varid{da}\;\mathsf{LTree}\;\Varid{de}\;[\mskip1.5mu \Conid{NPoint}\mskip1.5mu]}
+           %\ar[l]^-{|id >< inExpAr|}
+           \ar[d]_-{\ensuremath{\cata{\Varid{conquer}}}}
+\\
+    \ensuremath{\Conid{OverTime}\;\Conid{NPoint}} 
+&
+    \ensuremath{\Conid{NPoint}} \times \ensuremath{\Conid{OverTime}\;\Conid{NPoint}\times\Conid{OverTime}\;\Conid{NPoint}}
+          \ar[l]^-{\ensuremath{\Varid{conquer}}}
+}
+\end{eqnarray*}
+ Mas tenho dúvidas neste esquema
+
 
 \begin{hscode}\SaveRestoreHook
 \column{B}{@{}>{\hspre}l<{\hspost}@{}}%
-\column{4}{@{}>{\hspre}l<{\hspost}@{}}%
+\column{5}{@{}>{\hspre}l<{\hspost}@{}}%
+\column{8}{@{}>{\hspre}l<{\hspost}@{}}%
+\column{15}{@{}>{\hspre}l<{\hspost}@{}}%
+\column{25}{@{}>{\hspre}l<{\hspost}@{}}%
+\column{30}{@{}>{\hspre}l<{\hspost}@{}}%
 \column{E}{@{}>{\hspre}l<{\hspost}@{}}%
-\>[B]{}\Varid{calcLine}\mathbin{::}\Conid{NPoint}\to (\Conid{NPoint}\to \Conid{OverTime}\;\Conid{NPoint}){}\<[E]%
+\>[B]{}\Varid{deCasteljau}\mathbin{::}[\mskip1.5mu \Conid{NPoint}\mskip1.5mu]\to \Conid{OverTime}\;\Conid{NPoint}{}\<[E]%
+\\
+\>[B]{}\Varid{deCasteljau}\mathrel{=}\Varid{hyloNP}\;\Varid{conquer}\;{}\<[30]%
+\>[30]{}\Varid{divide}\mbox{\onelinecomment conquer . divide }{}\<[E]%
+\\[\blanklineskip]%
+\>[B]{}\Varid{hyloNP}\mathrel{=}\Varid{hyloLTree}{}\<[E]%
+\\
+\>[B]{}\Varid{conquer}\mathrel{=}\alt{\Varid{f2}}{\Varid{f3}}\;{}\<[25]%
+\>[25]{}\mathbf{where}{}\<[E]%
+\\
+\>[B]{}\hsindent{5}{}\<[5]%
+\>[5]{}\Varid{f2}\;(\Varid{x})\mathrel{=}\underline{\Varid{x}}{}\<[E]%
+\\
+\>[B]{}\hsindent{5}{}\<[5]%
+\>[5]{}\Varid{f3}\;\Varid{l}\mathord{@}(\Varid{y1},\Varid{y2})\mathrel{=}\lambda \Varid{pt}\to (\Varid{calcLine}\;(\Varid{y1}\;\Varid{pt})\;(\Varid{y2}\;\Varid{pt}))\;\Varid{pt}{}\<[E]%
+\\[\blanklineskip]%
+\>[B]{}\Varid{divide}\;[\mskip1.5mu \mskip1.5mu]\mathrel{=}i_1\;([\mskip1.5mu \mskip1.5mu]){}\<[E]%
+\\
+\>[B]{}\Varid{divide}\;[\mskip1.5mu \Varid{x}\mskip1.5mu]\mathrel{=}i_1\;(\Varid{x}){}\<[E]%
+\\
+\>[B]{}\Varid{divide}\;\Varid{x}\mathrel{=}i_2\;(\Varid{init}\;\Varid{x},\Varid{tail}\;\Varid{x}){}\<[E]%
+\\
+\>[B]{}\mbox{\onelinecomment divide :: [NPoint] -> Either () (Either (NPoint) (NPoint, ([NPoint], [NPoint])) )}{}\<[E]%
 \\
 \>[B]{}\Varid{calcLine}\mathrel{=}\Varid{cataList}\;\Varid{h}\;\mathbf{where}{}\<[E]%
 \\
-\>[B]{}\hsindent{4}{}\<[4]%
-\>[4]{}\Varid{h}\mathrel{=}\bot {}\<[E]%
-\\[\blanklineskip]%
-\>[B]{}\Varid{deCasteljau}\mathbin{::}[\mskip1.5mu \Conid{NPoint}\mskip1.5mu]\to \Conid{OverTime}\;\Conid{NPoint}{}\<[E]%
+\>[B]{}\hsindent{5}{}\<[5]%
+\>[5]{}\Varid{h}\mathrel{=}\alt{\underline{\underline{\Varid{nil}}}}{\Varid{g}}{}\<[E]%
 \\
-\>[B]{}\Varid{deCasteljau}\mathrel{=}\Varid{hyloAlgForm}\;\Varid{alg}\;\Varid{coalg}\;\mathbf{where}{}\<[E]%
+\>[B]{}\hsindent{5}{}\<[5]%
+\>[5]{}\Varid{g}\mathbin{::}(\Q ,\Conid{NPoint}\to \Conid{OverTime}\;\Conid{NPoint})\to (\Conid{NPoint}\to \Conid{OverTime}\;\Conid{NPoint}){}\<[E]%
 \\
-\>[B]{}\hsindent{4}{}\<[4]%
-\>[4]{}\Varid{coalg}\mathrel{=}\bot {}\<[E]%
+\>[B]{}\hsindent{5}{}\<[5]%
+\>[5]{}\Varid{g}\;(\Varid{d},\Varid{f})\;\Varid{l}\mathrel{=}\mathbf{case}\;\Varid{l}\;\mathbf{of}{}\<[E]%
 \\
-\>[B]{}\hsindent{4}{}\<[4]%
-\>[4]{}\Varid{alg}\mathrel{=}\bot {}\<[E]%
-\\[\blanklineskip]%
-\>[B]{}\Varid{hyloAlgForm}\mathrel{=}\bot {}\<[E]%
+\>[5]{}\hsindent{3}{}\<[8]%
+\>[8]{}[\mskip1.5mu \mskip1.5mu]{}\<[15]%
+\>[15]{}\to \Varid{nil}{}\<[E]%
+\\
+\>[5]{}\hsindent{3}{}\<[8]%
+\>[8]{}(\Varid{x}\mathbin{:}\Varid{xs})\to \lambda \Varid{z}\to \Varid{concat}\mathbin{\$}(\Varid{sequenceA}\;[\mskip1.5mu \Varid{singl}\comp \Varid{linear1d}\;\Varid{d}\;\Varid{x},\Varid{f}\;\Varid{xs}\mskip1.5mu])\;\Varid{z}{}\<[E]%
 \ColumnHook
 \end{hscode}\resethooks
 
 \subsection*{Problema 4}
+
+\begin{eqnarray*}
+\start
+\ensuremath{\Varid{avg\char95 aux}\mathrel{=}\conj{\Varid{avg}}{\length }\mathrel{=}\cata{\alt{\Varid{b}}{\Varid{q}}}}
+\just\equiv{ (52)}
+\ensuremath{\begin{lcbr}\Varid{avg}\comp \mathbf{in}\mathrel{=}\Varid{b}\comp \Conid{F}\;\conj{\Varid{avg}}{\length }\\\length \comp \mathbf{in}\mathrel{=}\Varid{q}\comp \Conid{F}\;\conj{\Varid{avg}}{\length }\end{lcbr}}
+\just\equiv{ Functor das listas F = id + id x f }
+\ensuremath{\begin{lcbr}\Varid{avg}\comp \mathbf{in}\mathrel{=}\Varid{b}\comp (\Varid{id}\mathbin{+}\Varid{id}\times\conj{\Varid{avg}}{\length })\\\length \comp \mathbf{in}\mathrel{=}\Varid{q}\comp (\Varid{id}\mathbin{+}\Varid{id}\times\conj{\Varid{avg}}{\length })\end{lcbr}}
+\just\equiv{in = [nil, cons], (20), b = [b1, b2]; q = [q1, q2]} 
+\ensuremath{\begin{lcbr}\alt{\Varid{avg}\comp \Varid{nil}}{\Varid{avg}\comp \Varid{cons}}\mathrel{=}\alt{\Varid{b1}}{\Varid{b2}}\comp (\Varid{id}\mathbin{+}\Varid{id}\times\conj{\Varid{avg}}{\length })\\\alt{\length \comp \Varid{nil}}{\length \comp \Varid{cons}}\mathrel{=}\alt{\Varid{q1}}{\Varid{q2}}\comp (\Varid{id}\mathbin{+}\Varid{id}\times\conj{\Varid{avg}}{\length })\end{lcbr}}
+
+ \just\equiv{(22), (1)} 
+\ensuremath{\begin{lcbr}\alt{\Varid{avg}\comp \Varid{nil}}{\Varid{avg}\comp \Varid{cons}}\mathrel{=}\alt{\Varid{b1},\Varid{b2}}{\Varid{id}\comp \conj{\Varid{avg}}{\length }}\\\alt{\length \comp \Varid{nil}}{\length \comp \Varid{cons}}\mathrel{=}\alt{\Varid{q1}}{\Varid{q2}\comp (\Varid{id}\comp \conj{\Varid{avg}}{\length })}\end{lcbr}}  
+ \just\equiv{(27)} 
+\ensuremath{\begin{lcbr}\Varid{avg}\comp \Varid{nil}\mathrel{=}\Varid{b1}\\\Varid{avg}\comp \Varid{cons}\mathrel{=}\Varid{b2}\comp (\Varid{id}\times\conj{\Varid{avg}}{\length })\end{lcbr}} 
+   \ensuremath{\begin{lcbr}\length \comp \Varid{nil}\mathrel{=}\Varid{q1}\\\length \comp \Varid{cons}\mathrel{=}\Varid{q2}\comp (\Varid{id}\times\conj{\Varid{avg}\;\length }{\cdot })\end{lcbr}} 
+\just\equiv{Introdução de variáveis (71 e 72)} 
+\ensuremath{\begin{lcbr}\Varid{avg}\;(\Varid{nil}\;\Varid{l})\mathrel{=}\Varid{b1}\;\Varid{l}\\\Varid{avg}\;(\Varid{cons}\;(\Varid{h},\Varid{l}))\mathrel{=}\Varid{b2}\;((\Varid{id}\times\conj{\Varid{avg}}{\length }\;(\Varid{h},\Varid{t})))\end{lcbr}} 
+   \ensuremath{\begin{lcbr}\length \;(\Varid{nil}\;\Varid{l})\mathrel{=}\Varid{q1}\;\Varid{l}\\\length \;(\Varid{cons}\;(\Varid{h},\Varid{t}))\mathrel{=}\Varid{q2}\;((\Varid{id}\times\conj{\Varid{avg}}{\length })\;(\Varid{h},\Varid{t}))\end{lcbr}}
+\just\equiv{(76); (77); (1)} 
+\ensuremath{\begin{lcbr}\Varid{avg}\;[\mskip1.5mu \mskip1.5mu]\mathrel{=}\Varid{b1}\;\Varid{l}\\\Varid{avg}\;(\Varid{cons}\;(\Varid{h},\Varid{l}))\mathrel{=}\Varid{b2}\;(\Varid{h},\conj{\Varid{avg}\;\Varid{t}}{\length \;\Varid{t}})\end{lcbr}} 
+   \ensuremath{\begin{lcbr}\length \;[\mskip1.5mu \mskip1.5mu]\mathrel{=}\Varid{q1}\;\Varid{l}\\\length \;(\Varid{cons}\;(\Varid{h},\Varid{t}))\mathrel{=}\Varid{q2}\;(\Varid{h},\conj{\Varid{avg}\;\Varid{t}}{\length \;\Varid{t}})\end{lcbr}}
+\just\equiv{\ensuremath{\Conid{Daqui}\;\Varid{inferimos}}} 
+\ensuremath{\begin{lcbr}\Varid{b1}\mathrel{=}\Varid{one}\\\Varid{b2}\;(\Varid{h},(\Varid{avg},\Varid{len}))\mathrel{=}\frac{\Varid{h}\mathbin{+}\Varid{len}\times\Varid{avg}}{\Varid{len}\mathbin{+}\mathrm{1}}\end{lcbr}} 
+   \ensuremath{\begin{lcbr}\Varid{q1}\mathrel{=}\Varid{one}\\\Varid{q2}\;(\Varid{h},(\Varid{avg},\Varid{len}))\mathrel{=}\Varid{len}\mathbin{+}\mathrm{1}\mathrel{=}\succ \comp \p2\comp \p2\end{lcbr}}
+\just\equiv{\ensuremath{\Conid{Logo}\;\Varid{temos}}}
+\ensuremath{\conj{\Varid{avg}}{\Varid{len}}\mathrel{=}\cata{\conj{\alt{\Varid{b1}}{\Varid{b2}}}{\alt{\Varid{q1}}{\Varid{q2}}}}}
+\just\equiv{\ensuremath{\Conid{Lei}\;\Varid{da}\;\Varid{troca}}}
+\ensuremath{\alt{\conj{\Varid{b1}}{\Varid{q1}}}{\conj{\Varid{b2}\;\Varid{q2}}{\cdot }}}  
+\qed
+\end{eqnarray*}
 
 Solução para listas não vazias:
 \begin{hscode}\SaveRestoreHook
@@ -1676,19 +1946,55 @@ Solução para listas não vazias:
 
 \begin{hscode}\SaveRestoreHook
 \column{B}{@{}>{\hspre}l<{\hspost}@{}}%
+\column{3}{@{}>{\hspre}l<{\hspost}@{}}%
 \column{E}{@{}>{\hspre}l<{\hspost}@{}}%
-\>[B]{}\Varid{avg\char95 aux}\mathrel{=}\bot {}\<[E]%
+\>[B]{}\Varid{inListNotNull}\mathrel{=}\alt{\Varid{singl}}{\Varid{cons}}{}\<[E]%
+\\[\blanklineskip]%
+\>[B]{}\Varid{outListNotNull}\;[\mskip1.5mu \Varid{a}\mskip1.5mu]\mathrel{=}i_1\;(\Varid{a}){}\<[E]%
+\\
+\>[B]{}\Varid{outListNotNull}\;(\Varid{h}\mathbin{:}\Varid{t})\mathrel{=}i_2\;(\Varid{h},\Varid{t}){}\<[E]%
+\\[\blanklineskip]%
+\>[B]{}\Varid{cataListNotNull}\;\Varid{g}\mathrel{=}\Varid{g}\comp \Varid{recList}\;(\Varid{cataListNotNull}\;\Varid{g})\comp \Varid{outListNotNull}{}\<[E]%
+\\[\blanklineskip]%
+\>[B]{}\Varid{avg\char95 aux}\mathrel{=}\Varid{cataListNotNull}\;\Varid{gene}\;\mathbf{where}{}\<[E]%
+\\
+\>[B]{}\hsindent{3}{}\<[3]%
+\>[3]{}\Varid{gene}\mathrel{=}\alt{\conj{\Varid{b1}}{\Varid{q1}}}{\conj{\Varid{b2}}{\Varid{q2}}}{}\<[E]%
+\\
+\>[B]{}\hsindent{3}{}\<[3]%
+\>[3]{}\Varid{b1}\mathrel{=}\Varid{id}{}\<[E]%
+\\
+\>[B]{}\hsindent{3}{}\<[3]%
+\>[3]{}\Varid{b2}\;(\Varid{h},(\Varid{avg},\Varid{len}))\mathrel{=}(\Varid{h}\mathbin{+}\Varid{len}\mathbin{*}\Varid{avg})\mathbin{/}(\Varid{len}\mathbin{+}\mathrm{1}){}\<[E]%
+\\
+\>[B]{}\hsindent{3}{}\<[3]%
+\>[3]{}\Varid{q1}\mathrel{=}\underline{\mathrm{1}}{}\<[E]%
+\\
+\>[B]{}\hsindent{3}{}\<[3]%
+\>[3]{}\Varid{q2}\mathrel{=}\succ \comp \p2\comp \p2{}\<[E]%
 \ColumnHook
 \end{hscode}\resethooks
 Solução para árvores de tipo \LTree:
 \begin{hscode}\SaveRestoreHook
 \column{B}{@{}>{\hspre}l<{\hspost}@{}}%
-\column{4}{@{}>{\hspre}l<{\hspost}@{}}%
+\column{3}{@{}>{\hspre}l<{\hspost}@{}}%
 \column{E}{@{}>{\hspre}l<{\hspost}@{}}%
 \>[B]{}\Varid{avgLTree}\mathrel{=}\p1\comp \llparenthesis\, \Varid{gene}\,\rrparenthesis\;\mathbf{where}{}\<[E]%
 \\
-\>[B]{}\hsindent{4}{}\<[4]%
-\>[4]{}\Varid{gene}\mathrel{=}\bot {}\<[E]%
+\>[B]{}\hsindent{3}{}\<[3]%
+\>[3]{}\Varid{gene}\mathrel{=}\alt{\Varid{b}}{\Varid{q}}{}\<[E]%
+\\
+\>[B]{}\hsindent{3}{}\<[3]%
+\>[3]{}\Varid{b}\mathrel{=}\conj{\Varid{id}}{\underline{\mathrm{1}}}{}\<[E]%
+\\
+\>[B]{}\hsindent{3}{}\<[3]%
+\>[3]{}\Varid{q}\mathrel{=}\conj{\Varid{q1}}{\Varid{q2}}{}\<[E]%
+\\
+\>[B]{}\hsindent{3}{}\<[3]%
+\>[3]{}\Varid{q1}\;((\Varid{avgL},\Varid{lenL}),(\Varid{avgR},\Varid{lenR}))\mathrel{=}(\Varid{lenL}\mathbin{*}\Varid{avgL}\mathbin{+}(\Varid{lenR}\mathbin{*}\Varid{avgR}))\mathbin{/}(\Varid{lenL}\mathbin{+}\Varid{lenR}){}\<[E]%
+\\
+\>[B]{}\hsindent{3}{}\<[3]%
+\>[3]{}\Varid{q2}\;((\anonymous ,\Varid{lenL}),(\anonymous ,\Varid{lenR}))\mathrel{=}\Varid{lenL}\mathbin{+}\Varid{lenR}{}\<[E]%
 \ColumnHook
 \end{hscode}\resethooks
 
@@ -1696,7 +2002,105 @@ Solução para árvores de tipo \LTree:
 Inserir em baixo o código \Fsharp\ desenvolvido, entre \text{\ttfamily \char92{}begin\char123{}verbatim\char125{}} e \text{\ttfamily \char92{}end\char123{}verbatim\char125{}}:
 
 \begin{tabbing}\ttfamily
-
+~type~BTree\char60{}\char39{}a\char62{}~\char61{}~Empty~\char124{}~Node~of~\char39{}a~\char42{}~BTree\char60{}\char39{}a\char62{}~\char42{}~BTree\char60{}\char39{}a\char62{}\\
+\ttfamily ~\char47{}\char47{}type~btree~\char61{}~Empty~\char124{}~Node~of~btree~\char42{}~int~\char42{}~btree\\
+\ttfamily ~\\
+\ttfamily ~let~inBTree~x~\char61{}~\\
+\ttfamily ~~~~~~~match~x~with\\
+\ttfamily ~~~~~~~\char124{}~Left\char40{}\char41{}~\char45{}\char62{}~Empty\\
+\ttfamily ~~~~~~~\char124{}~Right~\char40{}nodo\char44{}~\char40{}t1\char44{}~t2\char41{}\char41{}~\char45{}\char62{}~Node~\char40{}nodo\char44{}~t1\char44{}~t2\char41{}\\
+\ttfamily ~\\
+\ttfamily ~let~outBTree~x~\char61{}\\
+\ttfamily ~~~~~~match~x~with\\
+\ttfamily ~~~~~~\char124{}~Empty~\char45{}\char62{}~i1~\char40{}\char41{}\\
+\ttfamily ~~~~~~\char124{}~Node~\char40{}nodo\char44{}~t1\char44{}t2\char41{}~\char45{}\char62{}~i2~\char40{}nodo\char44{}~\char40{}t1\char44{}t2\char41{}\char41{}\\
+\ttfamily ~\\
+\ttfamily ~\char47{}\char47{}~\char40{}2\char41{}~Ana~\char43{}~cata~\char43{}~hylo~\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\\
+\ttfamily ~\\
+\ttfamily ~let~baseBTree~g~f~\char61{}~id~\char45{}\char124{}\char45{}~\char40{}g~\char62{}\char60{}~\char40{}f~\char62{}\char60{}~f\char41{}\char41{}\\
+\ttfamily ~\\
+\ttfamily ~let~recBTree~f~\char61{}~baseBTree~id~f~~~~~~~~~\\
+\ttfamily ~\char47{}\char47{}~Haskell~recBTree~g~\char61{}~id~\char45{}\char124{}\char45{}~\char40{}id~\char62{}\char60{}~\char40{}g~\char62{}\char60{}~g\char41{}\char41{}\\
+\ttfamily ~\\
+\ttfamily ~let~rec~cataBTree~a~\char61{}~a~\char60{}\char60{}~\char40{}recBTree~\char40{}cataBTree~a\char41{}\char41{}~\char60{}\char60{}~outBTree~\\
+\ttfamily ~\char47{}\char47{}~\char60{}\char60{}~é~um~pipeline~que~encaixa~o~da~direita~no~da~esquerda\\
+\ttfamily ~\char47{}\char47{}Também~existe~o~\char62{}\char62{}~\char58{}\char41{}\\
+\ttfamily ~\\
+\ttfamily ~let~rec~anaBTree~f~\char61{}~inBTree~\char60{}\char60{}~\char40{}recBTree~\char40{}anaBTree~f\char41{}~\char41{}~\char60{}\char60{}~f\\
+\ttfamily ~\\
+\ttfamily ~let~hyloBTree~a~c~\char61{}~cataBTree~a~\char60{}\char60{}~anaBTree~c\\
+\ttfamily ~\\
+\ttfamily ~\char47{}\char47{}~\char40{}3\char41{}~Map~\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\\
+\ttfamily ~\\
+\ttfamily ~\char47{}\char47{}instance~Functor~BTree\\
+\ttfamily ~\char47{}\char47{}~~~~~~~~~where~fmap~f~\char61{}~cataBTree~\char40{}~inLTree~\char46{}~baseLTree~f~id~\char41{}\\
+\ttfamily ~let~fmap~f~\char61{}~cataBTree~\char40{}~inBTree~\char60{}\char60{}~baseBTree~f~id~\char41{}\\
+\ttfamily ~\\
+\ttfamily ~\char47{}\char47{}~\char40{}4\char41{}~Examples~\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\\
+\ttfamily ~\\
+\ttfamily ~\char47{}\char47{}~\char40{}4\char46{}0\char41{}~Inversion~\char40{}mirror\char41{}~\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\\
+\ttfamily ~\\
+\ttfamily ~let~invBTree~x~\char61{}~cataBTree~\char40{}inBTree~\char60{}\char60{}~\char40{}id~\char45{}\char124{}\char45{}~\char40{}id~\char62{}\char60{}~swap\char41{}\char41{}\char41{}~x\\
+\ttfamily ~\\
+\ttfamily ~\char47{}\char47{}~\char40{}4\char46{}1\char41{}~Counting~\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\\
+\ttfamily ~\\
+\ttfamily ~let~countBTree~x~\char61{}~cataBTree~\char40{}either~one~\char40{}succ~\char60{}\char60{}~\char40{}add\char41{}~\char60{}\char60{}~p2\char41{}\char41{}~x\\
+\ttfamily ~\\
+\ttfamily ~\char47{}\char47{}\char45{}\char45{}~\char40{}4\char46{}3\char41{}~Serialization~\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\\
+\ttfamily ~\\
+\ttfamily ~let~singl~x~\char61{}~\char91{}x\char93{}\\
+\ttfamily ~\\
+\ttfamily ~\\
+\ttfamily ~let~inord~x~\char61{}\\
+\ttfamily ~~~~~let~join~\char40{}nodo\char44{}~\char40{}esq\char44{}~dir\char41{}\char41{}~\char61{}~esq~\char64{}~~singl~nodo~\char64{}~dir~\\
+\ttfamily ~~~~~in~\char40{}either~nil~join\char41{}~x\\
+\ttfamily ~\\
+\ttfamily ~let~inordt~x~\char61{}~cataBTree~inord~x\\
+\ttfamily ~\\
+\ttfamily ~let~preordt~x~\char61{}\\
+\ttfamily ~~~~~let~join~\char40{}nodo\char44{}~\char40{}esq\char44{}~dir\char41{}\char41{}~\char61{}~nodo~\char58{}\char58{}~esq~\char64{}~dir\\
+\ttfamily ~~~~~in~cataBTree~\char40{}either~nil~join\char41{}~x\\
+\ttfamily ~\\
+\ttfamily ~let~postordt~x~\char61{}\\
+\ttfamily ~~~~~let~join~\char40{}nodo\char44{}~\char40{}esq\char44{}~dir\char41{}\char41{}~\char61{}~esq~\char64{}~dir~\char64{}~singl~nodo\\
+\ttfamily ~~~~~in~cataBTree~\char40{}either~nil~join\char41{}~x\\
+\ttfamily ~\\
+\ttfamily ~\char47{}\char47{}\char45{}\char45{}~\char40{}4\char46{}4\char41{}~Quicksort~\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\\
+\ttfamily ~\\
+\ttfamily ~let~rec~part~p~lista~\char61{}~\\
+\ttfamily ~~~~~match~p\char44{}~lista~with\\
+\ttfamily ~~~~~\char124{}~p\char44{}~\char91{}\char93{}~\char45{}\char62{}~\char40{}\char91{}\char93{}\char44{}~\char91{}\char93{}\char41{}\\
+\ttfamily ~~~~~\char124{}~p\char44{}~\char40{}h\char58{}\char58{}t\char41{}~~\char45{}\char62{}~let~\char40{}s\char44{}~l\char41{}~\char61{}~part~p~t\\
+\ttfamily ~~~~~~~~~~~~~~~~~~~~~in~~if~p~h~~then~\char40{}h\char58{}\char58{}s\char44{}~l\char41{}\\
+\ttfamily ~~~~~~~~~~~~~~~~~~~~~~~~else~\char40{}s\char44{}~h~\char58{}\char58{}~l\char41{}\\
+\ttfamily ~\\
+\ttfamily ~\\
+\ttfamily ~\char47{}\char47{}\char45{}\char45{}~\char40{}4\char46{}5\char41{}~Traces~\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\\
+\ttfamily ~\\
+\ttfamily ~let~union~l1~l2~\char61{}~\\
+\ttfamily ~~~~~match~l1\char44{}~l2~with\\
+\ttfamily ~~~~~\char124{}~\char91{}\char93{}\char44{}~l~\char45{}\char62{}~l2\\
+\ttfamily ~~~~~\char124{}~l\char44{}~\char91{}\char93{}~\char45{}\char62{}~l1\\
+\ttfamily ~~~~~\char124{}otherwise~\char45{}\char62{}~let~l3~\char61{}~l2~\char124{}\char62{}~List\char46{}filter\char40{}fun~x~\char45{}\char62{}~not~\char40{}List\char46{}contains~x~l1\char41{}\char41{}\\
+\ttfamily ~~~~~~~~~~~~~~~~~~~in~l1~\char64{}~l3\\
+\ttfamily ~\\
+\ttfamily ~let~tunion\char40{}nodo\char44{}~\char40{}esq\char44{}~dir\char41{}\char41{}~\char61{}~union~\char40{}List\char46{}map~\char40{}fun~t~\char45{}\char62{}~nodo\char58{}\char58{}t\char41{}~esq\char41{}~\char40{}List\char46{}map~\char40{}fun~t~\char45{}\char62{}~nodo\char58{}\char58{}t\char41{}~dir\char41{}\\
+\ttfamily ~\\
+\ttfamily ~let~traces~x~\char61{}~cataBTree~\char40{}either~\char40{}konst~\char91{}\char91{}\char93{}\char93{}\char41{}~tunion\char41{}~x\\
+\ttfamily ~\\
+\ttfamily ~\char47{}\char47{}\char45{}\char45{}~\char40{}4\char46{}6\char41{}~Towers~of~Hanoi~\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\\
+\ttfamily ~let~present~\char61{}~inord~\char47{}\char47{}~same~as~in~qSort\\
+\ttfamily ~\\
+\ttfamily ~let~strategy~\char40{}x\char44{}y\char41{}~\char61{}~\\
+\ttfamily ~~~~~match~\char40{}x\char44{}y\char41{}~with~\\
+\ttfamily ~~~~~\char124{}~\char40{}x\char44{}~0\char41{}~\char45{}\char62{}~Left\char40{}\char41{}\\
+\ttfamily ~~~~~\char124{}~\char40{}x\char44{}~n\char41{}~\char45{}\char62{}~Right~\char40{}\char40{}n\char45{}1\char44{}x\char41{}\char44{}\char40{}\char40{}not~x\char44{}n\char45{}1\char41{}\char44{}\char40{}not~x\char44{}n\char45{}1\char41{}\char41{}\char41{}\\
+\ttfamily ~\\
+\ttfamily ~\char47{}\char47{}strategy\char40{}d\char44{}0\char41{}~\char61{}~Left~\char40{}\char41{}\\
+\ttfamily ~\char47{}\char47{}strategy\char40{}d\char44{}n\char43{}1\char41{}~\char61{}~Right~\char40{}\char40{}n\char44{}d\char41{}\char44{}\char40{}\char40{}not~d\char44{}n\char41{}\char44{}\char40{}not~d\char44{}n\char41{}\char41{}\char41{}\\
+\ttfamily ~\\
+\ttfamily ~\\
+\ttfamily ~let~hanoi~x~\char61{}~hyloBTree~present~strategy~x
 \end{tabbing}
 
 %----------------- Fim do anexo com soluções dos alunos ------------------------%
